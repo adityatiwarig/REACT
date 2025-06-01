@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path = 'user/:userId' element = {<User />} />
       <Route 
-      loader={githubInfoLoader}     // MAGIC LINE HAI YE
+      loader={githubInfoLoader}     // MAGIC LINE HAI YE render hone se pehle hi api hit
       path='github' 
       element={<Github />}
        />

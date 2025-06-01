@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
 function Github() {
-    const data = useLoaderData()
+    const data = useLoaderData()  // loader se githubinfo link hai route me
+
     // const [data, setData] = useState([])
     // useEffect(() => {
     //  fetch('https://api.github.com/users/hiteshchoudhary')
