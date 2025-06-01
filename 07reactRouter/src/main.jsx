@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path = 'user/:userId' element = {<User />} />
       <Route 
-      loader={githubInfoLoader}
+      loader={githubInfoLoader}     // MAGIC LINE HAI YE
       path='github' 
       element={<Github />}
        />
@@ -55,5 +55,6 @@ const router = createBrowserRouter(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
+    {/* PROVIDE ROUTING CONTEXT & BROWSER URL KE ACCD CORRECT RENDER HO */}
   </StrictMode>,
 )
