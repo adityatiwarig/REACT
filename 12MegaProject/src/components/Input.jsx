@@ -1,6 +1,6 @@
 import React, {useId} from 'react'
 
-const Input = React.forwardRef( function Input({
+const Input = React.forwardRef( function Input({        // isko export krte time bhi laga skte
     label,
     type = "text",
     className = "",

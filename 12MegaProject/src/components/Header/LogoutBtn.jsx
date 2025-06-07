@@ -7,8 +7,8 @@ function LogoutBtn() {
     const dispatch = useDispatch()
 
     const logoutHandler = () => {
-        authService.logout().then(() => {
-            dispatch(logout())
+        authService.logout().then(() => {         // YE EK PROMISE RETURN KRTA H
+            dispatch(logout())                 // LOGOUT K BAAD IMP INFO UPDATED RHE 
         })
     }
   return (
