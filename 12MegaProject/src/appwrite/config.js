@@ -109,9 +109,6 @@ export class Services {
                 conf.appwriteBucketId,
                 ID.unique(),
                 file,
-                [
-                     Permission.read(Role.any()) // <- This line is important
-                ]
             )
             
         } catch (error) {
